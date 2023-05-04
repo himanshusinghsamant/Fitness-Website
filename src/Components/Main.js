@@ -16,8 +16,11 @@ import img10 from "../images/chris-bumsted.webp";
 import img11 from "../images/Cristiano.jpg";
 import img12 from "../images/gymnast.webp";
 
+import { useNavigate } from "react-router-dom";
 
 const Main = () => {
+  const Navigate = (useNavigate())
+
   return (
     <div className="container">
       <div className="video">
@@ -128,19 +131,19 @@ const Main = () => {
       </div>
         <h1 className="articles">ARTICLES OR MORE</h1>
       <div className="section-4">
-        <div className="block-1">
+        <div className="block-1" onClick={()=>Navigate('/workout')}>
           <img src={img6} alt="" />
           <h2>Yoga Session | jan. 20-1-2023</h2>
           <p>How do yoga, meditation, breathing practices, and relaxation help us heal? The topic is a big one, which we will examine from many points of view as we move through this multipart series: Yoga as a Healing Art. In fact, healing is something we all aspire to, even if we do not always realize it—we all want to be healthy physically, mentally, and emotionally, and many of us also aspire to what we might call healing on the spiritual level as well.</p>
           <button className="sec-4-btn">Read more </button>
         </div>
-        <div className="block-2">
+        <div className="block-2" onClick={()=>Navigate('/workout')}>
           <img src={img7} alt="" />
           <h2>CrossFit, "Man Muscles," And The Feminine Idel</h2>
           <p>internet troll love to point out how unnaturally masculine female crossfit athletes looks. But if a training and nutrition regimen increases one's capacity and health , how can the resulting physique be anything but natural?</p>
             <button className="sec-4-btn">Read more </button>
         </div>
-        <div className="block-3">
+        <div className="block-3" onClick={()=>Navigate('/workout')}>
           <img src={img8} alt="" />
           <h2>Good strength and control of "Gymnast Athlete"</h2>
           <p>Gymnastics is a type of sport that includes physical exercises requiring balance, strength, flexibility, agility, coordination, dedication and endurance. The movements involved in gymnastics contribute to the development of the arms, legs, shoulders, back, chest, and abdominal muscle groups.</p>

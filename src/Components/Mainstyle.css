@@ -236,6 +236,28 @@ h2 {
 
 /* small device(mobile)------------------------------------> */
 
+
+
+/* medium device(tab) ------------------------------> */
+
+@media screen and (min-width: 414px) and (max-width: 896px) {
+ 
+  .sec-img img {
+  height: 650px;
+  }
+  .block-1,
+  .block-2,
+  .block-3 {
+    height: 750px;
+  }
+  .block-1 h2,
+  .block-2 h2,
+  .block-3 h2 {
+    font-size: 1.3rem;
+  }
+}
+
+
 @media (max-width: 414px) {
   .sec-info h1 {
     font-size: 2rem;
@@ -289,21 +311,3 @@ h2 {
   }
 }
 
-/* medium device(tab) ------------------------------> */
-
-@media screen and (min-width: 414px) and (max-width: 896px) {
- 
-  .sec-img img {
-  height: 650px;
-  }
-  .block-1,
-  .block-2,
-  .block-3 {
-    height: 750px;
-  }
-  .block-1 h2,
-  .block-2 h2,
-  .block-3 h2 {
-    font-size: 1.3rem;
-  }
-}

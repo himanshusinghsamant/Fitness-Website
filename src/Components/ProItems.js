@@ -1,10 +1,11 @@
-import React,{useContext}  from 'react'
+import React, {useContext}  from 'react'
 import './proItemsStyle.css'
-// import ShopContext from '../context/ShopContextPro'
+import {ShopContext} from '../context/ShopContextPro'
 
 const ProItems = (props) => {
   const{id, name, price, image} = props.data;
-  // const {addToCart} = useContext(ShopContext)
+  const {addToCart, cartItems, removeFromCart}= useContext(ShopContext)
+  let cartItemCount = cartItems[id]
   return (
     <div>
       <div className="pro-items-container">
@@ -13,7 +14,7 @@ const ProItems = (props) => {
       </div>
       <h3 className='name'>{name}</h3>
       <p className='price'>Rs.{price}</p>
-      {/* <button className='pro-add-btn' onClick={()=>addToCart(id)}>Add To Cart</button> */}
+      <button className='pro-add-btn'onClick={()=>addToCart(id)}>Add To Cart{cartItemCount>0 && <> ({cartItemCount})</>}</button>
       </div>
       
     </div>
@@ -21,3 +22,5 @@ const ProItems = (props) => {
 } 
 
 export default ProItems
+
+

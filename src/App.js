@@ -23,7 +23,7 @@ function App() {
         <Route path={"/cart"} element={<Cart/>}/>
       </Routes>
      </Router>
-     </ShopContextProvider>
+    </ShopContextProvider>
     </>
   );
 }

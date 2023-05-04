@@ -1,4 +1,5 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import "./Footerstyle.css";
 import apple from "../images/apple-store.jpg"
 import google from "../images/Google-Play.webp"
@@ -6,7 +7,11 @@ import Wk1 from "../images/workout-2.jpg"
 import Wk2 from "../images/workout-4.jpg"
 import Wk3 from "../images/workout-14.jpg"
 
+
 function Footer() {
+  const Navigate = useNavigate()
+
+
   return (
     <div className="footer">
       <div className="sec-1">
@@ -59,7 +64,7 @@ function Footer() {
         <div className="part-4">
           <h3>FIND A GYM TODAY!</h3>
           <p>Start your fitness journey and get healthy.</p>
-          <button className="part-4-btn">FIND A GYM NEAR YOU</button>
+          <button className="part-4-btn" onClick={()=>Navigate('/contact')}>FIND A GYM NEAR YOU</button>
         </div>
       </div>
       <hr className="hr-tag"/>
