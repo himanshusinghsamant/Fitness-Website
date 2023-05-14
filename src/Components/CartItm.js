@@ -4,11 +4,9 @@ import { ShopContext } from "../context/ShopContextPro";
 
 const CartItm = (props) => {
   const { id, name, price, image } = props.data;
-  // console.log(image);
   const { cartItems, addToCart, removeFromCart } = useContext(ShopContext);
 
-  // const {cartItems} =
-
+  console.log(cartItems)
   return (
     <div className="cartItm">
           <img src={image} alt="" />

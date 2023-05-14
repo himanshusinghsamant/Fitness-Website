@@ -7,7 +7,6 @@ import Wk1 from "../images/workout-2.jpg"
 import Wk2 from "../images/workout-4.jpg"
 import Wk3 from "../images/workout-14.jpg"
 
-
 function Footer() {
   const Navigate = useNavigate()
 

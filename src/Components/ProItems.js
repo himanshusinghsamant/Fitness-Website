@@ -4,7 +4,7 @@ import {ShopContext} from '../context/ShopContextPro'
 
 const ProItems = (props) => {
   const{id, name, price, image} = props.data;
-  const {addToCart, cartItems, removeFromCart}= useContext(ShopContext)
+  const {addToCart, cartItems}= useContext(ShopContext)
   let cartItemCount = cartItems[id]
   return (
     <div>

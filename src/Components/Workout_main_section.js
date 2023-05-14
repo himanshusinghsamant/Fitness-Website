@@ -7,7 +7,7 @@ const Workout_main_section = (props) => {
     <div>
       <div className="work-out-block-1">
         <div className="work-out-blk-img">
-            <img src={props.image} alt="image" />
+            <img src={props.image} alt="img" />
         </div>
         <div className="work-out-blk-info">
             <h2>{props.title}</h2>

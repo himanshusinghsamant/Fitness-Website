@@ -63,8 +63,9 @@
     padding: 5px 10px;
     font-weight: 800;
     cursor: pointer;
-    background: transparent;
     color: white;
+    background-color: rgb(19, 18, 18);
+    border: none;
 }
 .form-sec-btn button:hover{
    color: white;
@@ -83,8 +84,9 @@
     height: 50px;
     font-size: 2rem;
     cursor: pointer;
-    background: transparent;
+    background-color: rgb(36, 35, 35);
     color: white;
+    border: none;
 }
 .detail-btn{
     margin-right: 10%;

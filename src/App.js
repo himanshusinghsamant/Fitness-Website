@@ -15,17 +15,16 @@ function App() {
     <ShopContextProvider>
      <Router>
       <Routes>
-        <Route path={"/"} element={<Home/>}/>
-        <Route path={"/videos"} element={<Videos/>}/>
-        <Route path={"/shop"} element={<Shop/>}/>
-        <Route path={"/workout"} element={<Workout/>}/>
-        <Route path={"/contact"} element={<Contact/>}/>
-        <Route path={"/cart"} element={<Cart/>}/>
+        <Route path="/videos" element={<Videos/>}/>
+        <Route path="/shop" element={<Shop/>}/>
+        <Route path="/workout" element={<Workout/>}/>
+        <Route path="/contact" element={<Contact/>}/>
+        <Route path="/cart" element={<Cart/>}/>
+        <Route path="/" element={<Home/>}/>
       </Routes>
      </Router>
     </ShopContextProvider>
     </>
   );
 }
-
 export default App;

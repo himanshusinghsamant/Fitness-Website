@@ -16,13 +16,13 @@ const ShopContextPro = (props) => {
 
   const getTotalAmount=()=>{
     let totalAmount = 0
-    for(let item in cartItems){
+    for(const item in cartItems){
       if(cartItems[item] > 0){
         let itemInfo = PRODUCTS.find((product)=>
           product.id === Number(item)
         )
         totalAmount += cartItems[item] * itemInfo.price
-        // console.log(itemInfo.price)
+      
       }
       return totalAmount ;
     }
@@ -35,7 +35,6 @@ const ShopContextPro = (props) => {
   };
 
   const contextValue = { cartItems,getTotalAmount, addToCart, removeFromCart };
-  // console.log();
 
   return (
     <div>
